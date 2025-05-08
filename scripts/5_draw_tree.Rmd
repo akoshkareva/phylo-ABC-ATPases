@@ -1,0 +1,139 @@
+---
+title: "draw_tree"
+author: "Alena Koshkareva & Natalya Kichigina"
+date: "2025-05-08"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = "/home/alena_koshkareva/_files/BIOINF24-25/semester_project/draft_project/")
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Установка необходимых пакетов и проверка правильности директории
+
+```{r installing the necessary packages}
+if (!require("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+if (!require("treedataverse")) {
+  BiocManager::install("remotes")
+  BiocManager::install("YuLab-SMU/treedataverse")
+}
+
+library(treedataverse)
+
+getwd()
+```
+
+## Загрузка данных
+
+```{r uploading data}
+file <- "./results/fasttree_loyal_filter_deduplicate_v0.nwk"
+tree <- read.newick(file)  %>% 
+  as.treedata()
+
+tree
+
+# объединение метаданных с данными дерева
+
+metadata <- read.csv("./results/result_sources_ID.csv", stringsAsFactors = FALSE)  %>% 
+  rename(label = ID)
+
+tree <- full_join(tree, metadata, by = "label")
+```
+
+## Визуализация
+### Базовая визуализация с цветом
+
+```{r base tree}
+ggtree(tree, ladderize=FALSE) + 
+  geom_tippoint(aes(color = sources)) + 
+  geom_tiplab(offset = 0.1)
+```
+### Пробую разные формы
+```{r try different layouts}
+# 1. Rectangular
+ggtree(tree, layout = "rectangular", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("Rectangular Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+
+# 2. Dendrogram
+ggtree(tree, layout = "dendrogram", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("Dendrogram Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+
+# 3. Slanted
+ggtree(tree, layout = "slanted", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("Slanted Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+
+# 4. Ellipse
+ggtree(tree, layout = "ellipse", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("Ellipse Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+
+# 5. Roundrect
+ggtree(tree, layout = "roundrect", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("Roundrect Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+
+# 6. Fan
+ggtree(tree, layout = "fan", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("Fan Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+
+# 7. Circular
+ggtree(tree, layout = "circular", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("Circular Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+
+# 8. Inward Circular
+ggtree(tree, layout = "inward_circular", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("Inward Circular Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+
+# 9. Radial
+ggtree(tree, layout = "radial", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("Radial Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+
+# 10. Equal Angle
+ggtree(tree, layout = "equal_angle", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("Equal Angle Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+
+# 11. Daylight
+ggtree(tree, layout = "daylight", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("Daylight Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+
+# 12. APE
+ggtree(tree, layout = "ape", ladderize = FALSE) +
+  geom_tippoint(aes(color = sources), show.legend = FALSE) +
+  ggtitle("APE Layout") +
+  theme(legend.position = "none",
+        plot.title = element_text(hjust = 0.5, size = 12))
+```
