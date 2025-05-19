@@ -1,0 +1,34 @@
+
+-------------
+| Arguments |
+-------------
+Input file: ./data/processed/aligned_sequences/clustalo_new.fasta (format: fasta)
+Output file: ./data/processed/trimmed_sequences/clustalo_new_clipkit_1.fasta (format: fasta)
+Sequence type: Protein
+Gaps threshold: 1.0
+Gap characters: ['-', '?', '*', 'X', 'x']
+Trimming mode: smart-gap
+Create complementary output: False
+Process as codons: False
+Trim ends only: False
+Create log file: True
+
+
+------------------------
+| Writing output files |
+------------------------
+Trimmed alignment: ./data/processed/trimmed_sequences/clustalo_new_clipkit_1.fasta
+Complement file: False
+Log file: ./data/processed/trimmed_sequences/clustalo_new_clipkit_1.fasta.log
+
+
+---------------------
+| Output Statistics |
+---------------------
+Original length: 8415
+Number of sites kept: 8414
+Number of sites trimmed: 1
+Percentage of alignment trimmed: 0.012%
+
+Execution time: 46.216s
+
