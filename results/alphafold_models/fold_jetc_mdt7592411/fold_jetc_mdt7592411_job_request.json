@@ -1,0 +1,18 @@
+[{
+ "name": "JetC_MDT7592411",
+ "modelSeeds": [
+  "42"
+ ],
+ "sequences": [
+  {
+   "proteinChain": {
+    "sequence": "RFEEIDDDTVLAEKLGEVVDRTAEGYLSGGKEQRDGMSLLLRGVRAAMPKGVRVEMLKPDAVLRTERLRVSEIRDVFSGGQQLTAAIVLYCTMAALRANQRGEGRRSHAGVLFLDNPIGRASAGYLLELQFGVAQALGVQLVYTTGLFDAGALSTFPLIVRLRNDADLRAGRKYLSVDDQIARRLDELPPEDGTGQLAAVRVFRRPEPVGQ",
+    "count": 1,
+    "useStructureTemplate": true
+   }
+  }
+ ],
+ "dialect": "alphafoldserver",
+ "version": 1
+}
+]
