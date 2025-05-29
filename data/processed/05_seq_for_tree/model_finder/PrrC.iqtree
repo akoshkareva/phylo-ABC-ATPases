@@ -1,0 +1,181 @@
+IQ-TREE 2.2.2.3 COVID-edition built May 16 2023
+
+Input file name: PrrC.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 42
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 5 sequences with 8414 amino-acid sites
+Number of constant sites: 8055 (= 95.7333% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 8055 (= 95.7333% of all sites)
+Number of parsimony informative sites: 96
+Number of distinct site patterns: 425
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.yeast+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+Q.yeast+G4        -4362.173    8740.346 +        1    8740.363 +        1    8796.647 +        1
+Q.insect+G4       -4388.313    8792.627 - 4.44e-12    8792.644 - 4.44e-12    8848.928 - 4.44e-12
+LG+G4             -4395.033    8806.067 - 5.36e-15    8806.084 - 5.36e-15    8862.368 - 5.36e-15
+LG+R2             -4395.800    8809.600 - 9.15e-16    8809.622 - 9.13e-16    8872.939 - 2.71e-17
+VT+G4             -4402.001    8820.002 - 5.05e-18    8820.019 - 5.05e-18    8876.303 - 5.05e-18
+LG+I+G4           -4398.257    8814.514 - 7.85e-17    8814.535 - 7.83e-17    8877.853 - 2.32e-18
+Q.pfam+G4         -4403.843    8823.686 - 7.99e-19    8823.704 - 7.99e-19    8879.988 - 7.99e-19
+LG+I+R2           -4396.050    8812.101 - 2.62e-16    8812.127 - 2.61e-16    8882.477 -  2.3e-19
+LG+R3             -4394.477    8810.955 - 4.65e-16    8810.986 - 4.62e-16    8888.369 - 1.21e-20
+WAG+G4            -4412.245    8840.491 - 1.79e-22    8840.508 - 1.79e-22    8896.792 - 1.79e-22
+LG+I+R3           -4395.662    8815.324 - 5.23e-17    8815.362 - 5.18e-17    8899.776 - 4.03e-23
+Q.plant+G4        -4414.117    8844.233 - 2.76e-23    8844.251 - 2.76e-23    8900.535 - 2.76e-23
+JTTDCMut+G4       -4423.180    8862.359 -  3.2e-27    8862.377 -  3.2e-27    8918.661 -  3.2e-27
+JTT+G4            -4423.604    8863.209 - 2.09e-27    8863.226 - 2.09e-27    8919.510 - 2.09e-27
+FLU+G4            -4424.312    8864.623 - 1.03e-27    8864.640 - 1.03e-27    8920.924 - 1.03e-27
+Blosum62+G4       -4424.508    8865.016 - 8.48e-28    8865.033 - 8.48e-28    8921.317 - 8.48e-28
+cpREV+G4          -4425.775    8867.550 - 2.39e-28    8867.567 - 2.39e-28    8923.851 - 2.39e-28
+rtREV+G4          -4427.916    8871.832 - 2.81e-29    8871.849 - 2.81e-29    8928.133 - 2.81e-29
+LG+I              -4429.630    8875.261 - 5.05e-30    8875.278 - 5.05e-30    8931.562 - 5.05e-30
+Dayhoff+G4        -4446.485    8908.970 - 2.42e-37    8908.987 - 2.42e-37    8965.271 - 2.42e-37
+DCMut+G4          -4446.641    8909.282 - 2.07e-37    8909.299 - 2.07e-37    8965.584 - 2.07e-37
+PMB+G4            -4454.281    8924.561 - 9.96e-41    8924.579 - 9.96e-41    8980.863 - 9.96e-41
+HIVb+G4           -4460.212    8936.423 - 2.64e-43    8936.440 - 2.64e-43    8992.725 - 2.64e-43
+Q.bird+G4         -4470.981    8957.962 - 5.56e-48    8957.979 - 5.56e-48    9014.263 - 5.56e-48
+Q.mammal+G4       -4471.817    8959.633 - 2.41e-48    8959.650 - 2.41e-48    9015.934 - 2.41e-48
+LG                -4479.846    8973.691 - 2.14e-51    8973.704 - 2.14e-51    9022.955 - 7.21e-50
+HIVw+G4           -4497.328    9010.656 - 2.01e-59    9010.674 - 2.01e-59    9066.958 - 2.01e-59
+cpREV+F+G4        -4419.464    8892.927 - 7.37e-34    8893.108 - 6.79e-34    9082.944 - 6.78e-63
+WAG+F+G4          -4426.057    8906.114 - 1.01e-36    8906.295 -  9.3e-37    9096.131 - 9.29e-66
+Dayhoff+F+G4      -4426.869    8907.738 - 4.48e-37    8907.919 - 4.13e-37    9097.755 - 4.12e-66
+DCMut+F+G4        -4426.999    8907.997 - 3.93e-37    8908.178 - 3.63e-37    9098.014 - 3.62e-66
+JTTDCMut+F+G4     -4434.838    8923.677 - 1.55e-40    8923.857 - 1.43e-40    9113.693 - 1.43e-69
+JTT+F+G4          -4435.772    8925.545 - 6.09e-41    8925.725 - 5.61e-41    9115.561 - 5.61e-70
+FLU+F+G4          -4436.748    8927.497 - 2.29e-41    8927.677 - 2.11e-41    9117.513 - 2.11e-70
+VT+F+G4           -4438.085    8930.169 - 6.03e-42    8930.350 - 5.56e-42    9120.186 - 5.55e-71
+LG+F+G4           -4441.337    8936.674 - 2.33e-43    8936.854 - 2.15e-43    9126.691 - 2.15e-72
+Blosum62+F+G4     -4443.577    8941.154 - 2.48e-44    8941.335 - 2.29e-44    9131.171 - 2.29e-73
+Q.pfam+F+G4       -4444.467    8942.935 - 1.02e-44    8943.115 -  9.4e-45    9132.951 - 9.38e-74
+rtREV+F+G4        -4445.176    8944.352 - 5.02e-45    8944.532 - 4.63e-45    9134.369 - 4.62e-74
+Q.yeast+F+G4      -4445.891    8945.782 - 2.46e-45    8945.962 - 2.26e-45    9135.799 - 2.26e-74
+PMB+F+G4          -4447.384    8948.768 - 5.52e-46    8948.949 - 5.08e-46    9138.785 - 5.08e-75
+Q.insect+F+G4     -4450.803    8955.607 - 1.81e-47    8955.787 - 1.66e-47    9145.623 - 1.66e-76
+Q.plant+F+G4      -4456.567    8967.134 - 5.67e-50    8967.314 - 5.23e-50    9157.150 - 5.22e-79
+FLAVI+G4          -4543.215    9102.429 - 2.37e-79    9102.446 - 2.37e-79    9158.730 - 2.37e-79
+HIVb+F+G4         -4457.532    8969.063 - 2.16e-50    8969.244 - 1.99e-50    9159.080 - 1.99e-79
+mtInv+F+G4        -4463.402    8980.804 -  6.1e-53    8980.984 - 5.62e-53    9170.821 - 5.61e-82
+mtZOA+F+G4        -4463.765    8981.530 - 4.24e-53    8981.711 - 3.91e-53    9171.547 -  3.9e-82
+Q.mammal+F+G4     -4468.021    8990.042 - 6.01e-55    8990.223 - 5.54e-55    9180.059 - 5.54e-84
+mtMet+F+G4        -4469.602    8993.203 - 1.24e-55    8993.384 - 1.14e-55    9183.220 - 1.14e-84
+mtREV+F+G4        -4472.694    8999.389 - 5.62e-57    8999.569 - 5.18e-57    9189.405 - 5.17e-86
+HIVw+F+G4         -4473.828    9001.657 - 1.81e-57    9001.837 - 1.67e-57    9191.673 - 1.66e-86
+Q.bird+F+G4       -4476.875    9007.751 - 8.58e-59    9007.931 - 7.91e-59    9197.767 -  7.9e-88
+FLAVI+F+G4        -4483.473    9020.945 - 1.17e-61    9021.126 - 1.08e-61    9210.962 - 1.08e-90
+mtVer+F+G4        -4485.200    9024.400 - 2.08e-62    9024.580 - 1.92e-62    9214.417 - 1.92e-91
+mtART+F+G4        -4486.927    9027.854 -  3.7e-63    9028.035 - 3.41e-63    9217.871 - 3.41e-92
+mtMAM+F+G4        -4494.812    9043.624 - 1.39e-66    9043.804 - 1.28e-66    9233.640 - 1.28e-95
+mtMet+G4          -4662.291    9340.581 - 4.58e-131    9340.598 - 4.58e-131    9396.882 - 4.58e-131
+mtInv+G4          -4694.725    9405.450 - 3.75e-145    9405.467 - 3.75e-145    9461.751 - 3.75e-145
+mtZOA+G4          -4697.090    9410.180 - 3.53e-146    9410.197 - 3.53e-146    9466.481 - 3.53e-146
+mtREV+G4          -4705.671    9427.342 - 6.62e-150    9427.359 - 6.62e-150    9483.643 - 6.62e-150
+mtVer+G4          -4721.518    9459.036 - 8.68e-157    9459.053 - 8.68e-157    9515.338 - 8.68e-157
+mtART+G4          -4730.218    9476.436 - 1.45e-160    9476.453 - 1.45e-160    9532.737 - 1.45e-160
+mtMAM+G4          -4734.690    9485.380 - 1.65e-162    9485.398 - 1.65e-162    9541.682 - 1.65e-162
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.yeast+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 0.7884
+
+ Category  Relative_rate  Proportion
+  1         0.0931         0.2500
+  2         0.4024         0.2500
+  3         0.9537         0.2500
+  4         2.5508         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+TREE USED FOR ModelFinder
+-------------------------
+
+Log-likelihood of the tree: -4362.1692 (s.e. 206.0695)
+Unconstrained log-likelihood (without tree): -5128.8298
+Number of free parameters (#branches + #model parameters): 8
+Akaike information criterion (AIC) score: 8740.3383
+Corrected Akaike information criterion (AICc) score: 8740.3555
+Bayesian information criterion (BIC) score: 8796.6396
+
+Total tree length (sum of branch lengths): 7.9537
+Sum of internal branch lengths: 4.5113 (56.7191% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'NZ_CP104378.1_1981' is drawn at root
+
++------NZ_CP104378.1_1981
+|
+|                                                     +--NZ_CP065032.1_62
+|                   +---------------------------------|
+|                   |                                 +---CP031416.1_1633
++-------------------|
+|                   +--------------HG315671.1_2601
+|
++---------CP073356.1_303
+
+Tree in newick format:
+
+(NZ_CP104378.1_1981:0.6419122831,((NZ_CP065032.1_62:0.2754318166,CP031416.1_1633:0.3763064141):2.8087765122,HG315671.1_2601:1.2930512989):1.7025190510,CP073356.1_303:0.8557495116);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t PrrC.treefile -m "Q.yeast+G4{0.788439}" --length 8414
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s PrrC.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s PrrC.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sun May 18 00:18:28 2025
+Total CPU time used: 0.04149 seconds (0h:0m:0s)
+Total wall-clock time used: 0.0257773 seconds (0h:0m:0s)
+

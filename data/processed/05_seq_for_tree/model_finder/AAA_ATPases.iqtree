@@ -1,0 +1,195 @@
+IQ-TREE 2.2.2.3 COVID-edition built May 16 2023
+
+Input file name: AAA_ATPases.fasta
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 42
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 10 sequences with 8414 amino-acid sites
+Number of constant sites: 7700 (= 91.5141% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 7700 (= 91.5141% of all sites)
+Number of parsimony informative sites: 5
+Number of distinct site patterns: 883
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: LG+G4
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+LG+G4             -7506.649   15049.297 +    0.888   15049.379 +    0.889   15175.975 +    0.994
+Q.pfam+G4         -7512.279   15060.558 -  0.00319   15060.640 -  0.00319   15187.236 -  0.00356
+LG+I+G4           -7508.741   15055.482 -   0.0403   15055.573 -   0.0402   15189.198 -  0.00134
+LG                -7518.146   15070.293 - 2.45e-05   15070.366 - 2.47e-05   15189.933 - 0.000925
+LG+I              -7514.774   15065.548 - 0.000263   15065.630 - 0.000263   15192.226 - 0.000294
+LG+R2             -7510.396   15058.793 -   0.0077   15058.883 -  0.00768   15192.508 - 0.000255
+LG+I+R2           -7510.304   15060.607 -  0.00311   15060.707 -  0.00308   15201.360 - 3.05e-06
+LG+R3             -7506.890   15055.780 -   0.0347   15055.890 -   0.0343   15203.571 - 1.01e-06
+LG+I+R3           -7506.333   15056.666 -   0.0223   15056.786 -   0.0219   15211.494 - 1.92e-08
+VT+G4             -7524.699   15085.398 - 1.29e-08   15085.480 - 1.29e-08   15212.076 - 1.44e-08
+Blosum62+G4       -7535.241   15106.483 -  3.4e-13   15106.564 -  3.4e-13   15233.161 -  3.8e-13
+JTT+G4            -7540.533   15117.066 - 1.71e-15   15117.147 - 1.71e-15   15243.743 - 1.91e-15
+JTTDCMut+G4       -7541.673   15119.347 - 5.46e-16   15119.428 - 5.47e-16   15246.025 - 6.11e-16
+Q.plant+G4        -7543.788   15123.575 -  6.6e-17   15123.657 -  6.6e-17   15250.253 - 7.38e-17
+WAG+G4            -7545.284   15126.569 - 1.48e-17   15126.650 - 1.48e-17   15253.246 - 1.65e-17
+cpREV+G4          -7546.564   15129.127 - 4.11e-18   15129.209 - 4.11e-18   15255.805 -  4.6e-18
+PMB+G4            -7554.138   15144.276 - 2.11e-21   15144.357 - 2.11e-21   15270.954 - 2.36e-21
+HIVb+G4           -7566.867   15169.734 - 6.25e-27   15169.816 - 6.26e-27   15296.412 - 6.99e-27
+rtREV+G4          -7582.227   15200.455 - 1.33e-33   15200.536 - 1.34e-33   15327.133 - 1.49e-33
+Q.insect+G4       -7586.277   15208.553 - 2.33e-35   15208.635 - 2.33e-35   15335.231 -  2.6e-35
+Q.bird+G4         -7589.010   15214.020 - 1.51e-36   15214.101 - 1.51e-36   15340.697 - 1.69e-36
+Q.yeast+G4        -7598.630   15233.259 -    1e-40   15233.341 - 1.01e-40   15359.937 - 1.12e-40
+Q.mammal+G4       -7603.718   15243.435 - 6.19e-43   15243.517 -  6.2e-43   15370.113 - 6.93e-43
+FLAVI+G4          -7606.285   15248.569 - 4.76e-44   15248.651 - 4.76e-44   15375.247 - 5.32e-44
+Dayhoff+G4        -7630.609   15297.217 -  1.3e-54   15297.299 -  1.3e-54   15423.895 - 1.45e-54
+DCMut+G4          -7630.609   15297.218 -  1.3e-54   15297.300 -  1.3e-54   15423.896 - 1.45e-54
+FLU+G4            -7641.117   15318.234 - 3.55e-59   15318.316 - 3.55e-59   15444.912 - 3.97e-59
+HIVw+G4           -7724.320   15484.640 -  2.6e-95   15484.721 -  2.6e-95   15611.318 - 2.91e-95
+FLU+F+G4          -7688.816   15451.632 - 3.82e-88   15451.968 - 3.37e-88   15712.026 - 3.94e-117
+cpREV+F+G4        -7696.993   15467.986 - 1.08e-91   15468.321 - 9.48e-92   15728.379 - 1.11e-120
+WAG+F+G4          -7698.498   15470.997 - 2.39e-92   15471.333 -  2.1e-92   15731.390 - 2.46e-121
+Dayhoff+F+G4      -7698.589   15471.178 - 2.18e-92   15471.513 - 1.92e-92   15731.571 - 2.24e-121
+DCMut+F+G4        -7698.614   15471.228 - 2.13e-92   15471.564 - 1.87e-92   15731.621 - 2.19e-121
+PMB+F+G4          -7700.611   15475.222 - 2.89e-93   15475.557 - 2.54e-93   15735.615 - 2.97e-122
+Blosum62+F+G4     -7701.660   15477.320 - 1.01e-93   15477.656 - 8.91e-94   15737.714 - 1.04e-122
+VT+F+G4           -7702.445   15478.890 - 4.61e-94   15479.225 - 4.07e-94   15739.283 - 4.75e-123
+Q.pfam+F+G4       -7704.484   15482.969 -    6e-95   15483.305 - 5.29e-95   15743.362 - 6.18e-124
+LG+F+G4           -7705.373   15484.747 - 2.47e-95   15485.083 - 2.17e-95   15745.140 - 2.54e-124
+JTTDCMut+F+G4     -7705.543   15485.086 - 2.08e-95   15485.422 - 1.83e-95   15745.479 - 2.14e-124
+rtREV+F+G4        -7705.685   15485.371 -  1.8e-95   15485.707 - 1.59e-95   15745.764 - 1.86e-124
+JTT+F+G4          -7705.786   15485.572 - 1.63e-95   15485.908 - 1.44e-95   15745.966 - 1.68e-124
+HIVw+F+G4         -7707.061   15488.122 - 4.56e-96   15488.458 - 4.02e-96   15748.515 - 4.69e-125
+HIVb+F+G4         -7707.763   15489.525 - 2.26e-96   15489.861 - 1.99e-96   15749.918 - 2.33e-125
+Q.yeast+F+G4      -7709.398   15492.796 - 4.41e-97   15493.132 - 3.88e-97   15753.190 - 4.54e-126
+Q.plant+F+G4      -7711.823   15497.645 -  3.9e-98   15497.981 - 3.44e-98   15758.038 - 4.02e-127
+Q.insect+F+G4     -7714.558   15503.116 - 2.53e-99   15503.451 - 2.23e-99   15763.509 - 2.61e-128
+FLAVI+F+G4        -7714.694   15503.387 - 2.21e-99   15503.723 - 1.95e-99   15763.780 - 2.27e-128
+mtInv+F+G4        -7715.997   15505.994 -   6e-100   15506.330 - 5.29e-100   15766.388 - 6.18e-129
+mtREV+F+G4        -7718.291   15510.581 - 6.05e-101   15510.917 - 5.34e-101   15770.974 - 6.23e-130
+Q.mammal+F+G4     -7718.575   15511.150 - 4.55e-101   15511.486 - 4.02e-101   15771.543 - 4.69e-130
+mtMet+F+G4        -7718.675   15511.350 - 4.12e-101   15511.686 - 3.63e-101   15771.743 - 4.24e-130
+Q.bird+F+G4       -7721.006   15516.011 - 4.01e-102   15516.347 - 3.53e-102   15776.404 - 4.13e-131
+mtVer+F+G4        -7721.733   15517.467 - 1.94e-102   15517.803 - 1.71e-102   15777.860 - 1.99e-131
+mtMAM+F+G4        -7722.061   15518.122 - 1.4e-102   15518.458 - 1.23e-102   15778.515 - 1.44e-131
+mtZOA+F+G4        -7723.583   15521.167 - 3.04e-103   15521.502 - 2.68e-103   15781.560 - 3.13e-132
+mtART+F+G4        -7733.598   15541.195 - 1.36e-107   15541.531 - 1.2e-107   15801.589 - 1.4e-136
+mtZOA+G4          -7985.954   16007.908 - 6.15e-209   16007.990 - 6.16e-209   16134.586 - 6.88e-209
+mtREV+G4          -8017.877   16071.755 - 8.41e-223   16071.836 - 8.42e-223   16198.432 - 9.41e-223
+mtMAM+G4          -8033.456   16102.911 - 1.44e-229   16102.993 - 1.44e-229   16229.589 - 1.61e-229
+mtART+G4          -8079.035   16194.069 - 2.31e-249   16194.151 - 2.32e-249   16320.747 - 2.59e-249
+mtVer+G4          -8093.014   16222.028 - 1.97e-255   16222.109 - 1.97e-255   16348.706 - 2.2e-255
+mtMet+G4          -8117.607   16271.215 - 4.1e-266   16271.296 - 4.1e-266   16397.892 - 4.58e-266
+mtInv+G4          -8249.380   16534.760 - 2.47e-323   16534.841 - 2.47e-323   16661.437 - 2.96e-323
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: LG+G4
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Gamma with 4 categories
+Gamma shape alpha: 1.5046
+
+ Category  Relative_rate  Proportion
+  1         0.2260         0.2500
+  2         0.5893         0.2500
+  3         1.0507         0.2500
+  4         2.1340         0.2500
+Relative rates are computed as MEAN of the portion of the Gamma distribution falling in the category.
+
+TREE USED FOR ModelFinder
+-------------------------
+
+Log-likelihood of the tree: -7506.5927 (s.e. 220.7929)
+Unconstrained log-likelihood (without tree): -12480.9005
+Number of free parameters (#branches + #model parameters): 18
+Akaike information criterion (AIC) score: 15049.1854
+Corrected Akaike information criterion (AICc) score: 15049.2669
+Bayesian information criterion (BIC) score: 15175.8632
+
+Total tree length (sum of branch lengths): 51.8466
+Sum of internal branch lengths: 16.2642 (31.3699% of tree length)
+
+WARNING: 1 near-zero internal branches (<0.0001) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+WARNING: 1 too long branches (>9.8000) should be treated with caution!
+NOTE: Tree is UNROOTED although outgroup taxon 'HOLB_1a5t__Ec_16129062' is drawn at root
+
++----------------------------------------HOLB_1a5t__Ec_16129062
+|
+|                         +**DnaA_1l8q__Aqae_24158831
+|                 +-------|
+|                 |       +--------------------AFG1_Sc_6320783
+|              +**|
+|              |  +-----------------Tery3729_Ter_23043094
++--------------|
+|              |         +--------CDC48_Sp_27151477
+|              |      +--|
+|              |      |  |                       +-----clpB_Ssp_16331048
+|              |      |  +-----------------------|
+|              |      |                          +--------McrB_Ec_2144460
+|              +------|
+|                     |       +------ClpX_Scoe_21221074
+|                     +-------|
+|                             +----------------------------gp9a_phiC31_9631173
+|
++--rept_Dm_17737635
+
+Tree in newick format:
+
+(HOLB_1a5t__Ec_16129062:9.9999984927,(((DnaA_1l8q__Aqae_24158831:0.0000021133,AFG1_Sc_6320783:5.1500340088):2.0130370483,Tery3729_Ter_23043094:4.5758170204):0.0000025553,((CDC48_Sp_27151477:2.3218002026,(clpB_Ssp_16331048:1.6645726679,McrB_Ec_2144460:2.2711509834):5.9085396933):0.8813459311,(ClpX_Scoe_21221074:1.8407132331,gp9a_phiC31_9631173:7.1184363221):1.9510746821):1.7732601168):3.7369441427,rept_Dm_17737635:0.6398280654);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t AAA_ATPases.treefile -m "LG+G4{1.50456}" --length 8414
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s AAA_ATPases.fasta --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s AAA_ATPases.fasta --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Sat May 17 23:05:47 2025
+Total CPU time used: 0.338852 seconds (0h:0m:0s)
+Total wall-clock time used: 0.0489484 seconds (0h:0m:0s)
+
