@@ -12,7 +12,7 @@ mmseqs createdb dataset_ABC_ATP.faa dataset_ABC_ATP || { echo "Error during data
 
 # 2. Clustering with a minimum identity of 70% and with 70% coverage
 echo "Шаг 2: Step 2: Clustering of sequences..."
-mmseqs cluster dataset_ABC_ATP clu tmp --min-seq-id 0.7 --threads 8 || { echo "Clustering erro"; exit 1; }
+mmseqs cluster dataset_ABC_ATP clu tmp --min-seq-id 0.7 --threads 8 || { echo "Clustering error"; exit 1; }
 
 # 3. Extraction of cluster representatives
 echo "Step 3: Extracting Cluster Representatives..."
