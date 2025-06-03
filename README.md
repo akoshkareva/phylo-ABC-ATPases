@@ -10,8 +10,8 @@
 **Supervisors**  
 - Oksana Kotovskaya (Skolkovo Institute of Science and Technology)
 
- ### Structura 
-
+ ### Repository structure
+```
 📁 phylo-ABC-ATPases/
 ├── 📄 README.md 
 ├── 📄 environment.yml 
@@ -30,7 +30,8 @@
 ├── 📁 results/
 │   ├── 📁 trees/  
 │   │   └── 📄 fasttree.nwk  
-│   │   
+│   │    
+│   │    
 │   ├── 📁 alphafold_models/ 
 │   └── 📄 result_sources_ID.csv
 └── 📁 scripts/
@@ -44,8 +45,7 @@
     ├── 📄 05.2_statistics_number_seq_by_source.ipynb
     ├── 📄 07.2_draw_tree.R
     └── 📄 09_alphafold_web.md  
-
-
+```
 
 ### Introduction
 
@@ -58,19 +58,19 @@ And in this project, we would like to establish phylogenetic relationships betwe
 Data. The data were obtained from three sources: firstly, literature data with already known sequences of immune ABC ATPases, secondly, protein sequences from immune proteins of bacteria known to harbour ABC-ATPase domains (e.g. PrrC, RloC). GenBank Database. predicted with PADLOC v.2.0.0. available in the National Centre for Biotechnology Information (NCBI) database, and the last source homologues of proteins studied experimentally using the Position Specific Iterated BLAST web. The final size of the assembled dataset was about 50 thousand sequences.
 
 ### workflow
-####1 step.
+1 step.
 The entire protein dataset was then clustered at 70% similarity and 70% minimum coverage using MMseqs2 (17.b804f)
 
-####2 step. 
+2 step. 
 The resulting sequences were aligned using Clustal Omega (v.1.2.4)
 
-####3 step.
+3 step.
 Alignment trimming using the ClipKIT(2.3.0)
 
-####4 step.
+4 step.
 Filtering for the presence of two domain areas: Walker A, Walker B
 
 
-####5 step.
+5 step.
 
 Tree construction by the FastTree(2.1.11) program (maximum-likelihood NNIs).
