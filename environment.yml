@@ -1,4 +1,4 @@
-name : defense_explorer
+name : phylo-ABC-ATPases
 channels :
     - conda-forge
     - bioconda
