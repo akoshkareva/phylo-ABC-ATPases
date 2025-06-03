@@ -1,0 +1,17 @@
+name : defense_explorer
+channels :
+    - conda-forge
+    - bioconda
+    - defaults
+dependencies:
+    - biopython==1.78
+    - mmseqs2==17.b804f
+    - pandas==2.2.3
+    - numpy==1.26.4
+    - clipkit==2.3.0
+    - mafft==7.525
+    - muscle==5.3
+    - clustalo==1.2.4
+    - fasttree==2.1.11
+    - iqtree==2.2.2.3
+
