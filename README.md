@@ -29,9 +29,7 @@
 │       └── 📁 05_seq_for_tree/ 
 ├── 📁 results/
 │   ├── 📁 trees/  
-│   │   └── 📄 fasttree.nwk  
-│   │    
-│   │    
+│   │   └── 📄 fasttree.nwk   
 │   ├── 📁 alphafold_models/ 
 │   └── 📄 result_sources_ID.csv
 └── 📁 scripts/
